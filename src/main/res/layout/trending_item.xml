@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/icon"
+        android:id="@+id/icon">
+
+    </com.facebook.drawee.view.SimpleDraweeView>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:textSize="12sp"
+        android:textColor="#52575C"
+        android:layout_marginTop="10dp"
+        android:text="xsdss"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginLeft="16dp" />
+    <TextView
+        android:ellipsize="middle"
+        android:id="@+id/itemcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#52575C"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/user_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/childLayout">
+
+        <TextView
+            android:id="@+id/url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="6"
+            android:autoLink="all"
+            android:textColor="@color/textColorPrimary"
+            android:text="123465"
+            android:layout_marginLeft="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/programLanguageColor"
+                android:layout_marginLeft="64dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/icon"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/programLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="123"/>
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/staryellow16"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/starNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="123"/>
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/forkblack16"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/forkNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="123"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/line"/>
+
+
+
+
+</LinearLayout>

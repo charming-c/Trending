@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.MainActivity">
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp">-->
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Trending"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginVertical="14dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textAllCaps="false"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="#25282B"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_centerInParent="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="21dp">&ndash;&gt;-->
+<!--&lt;!&ndash;        </TextView>&ndash;&gt;-->
+
+<!--    </RelativeLayout>-->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:id="@+id/recyclerview" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>
